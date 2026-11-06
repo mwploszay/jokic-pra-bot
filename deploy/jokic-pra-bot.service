@@ -1,0 +1,16 @@
+[Unit]
+Description=Jokic PRA tweet bot
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=jokic
+WorkingDirectory=/opt/jokic-pra-bot
+EnvironmentFile=/etc/jokic-pra-bot.env
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/opt/jokic-pra-bot/venv/bin/python jokic_pra_bot.py
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target

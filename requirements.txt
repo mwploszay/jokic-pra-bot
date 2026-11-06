@@ -1,0 +1,2 @@
+requests>=2.31
+tweepy>=4.14

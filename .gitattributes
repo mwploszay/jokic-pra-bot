@@ -1,0 +1,2 @@
+# Keep Linux-style (LF) line endings everywhere: these files are deployed to a Linux server
+* text=auto eol=lf

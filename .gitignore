@@ -1,0 +1,26 @@
+# Secrets: API keys and tokens never go in the repo
+.env
+*.env
+.env.*
+
+# Bot's saved progress (live season record, game history)
+state.json
+state.tmp
+*.tmp
+
+# Logs
+*.log
+logs/
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# Backups and editor/OS clutter
+*.bak
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
